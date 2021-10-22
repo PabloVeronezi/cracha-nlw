@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  --gray: hsla(240, 6%, 13%);
+  --black: hsla(240, 6%, 13%);
   --gray: hsla(240, 9%, 89%);
 
   display: grid;
@@ -17,9 +17,10 @@ body {
 }
 
 main {
-  background: url(../images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(../images/background.svg)  no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -70,7 +71,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 p {
@@ -87,4 +88,11 @@ ul {
   gap: 0.5rem;
 
   justify-content: center; /* Alinhamento vertical */
+}
+
+.fa-facebook-square, .fa-linkedin {
+  font-size: 3rem;
+  background-color: #323238;
+  padding: 0.62rem;
+  border-radius: 10px;
 }

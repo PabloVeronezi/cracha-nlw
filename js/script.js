@@ -1,9 +1,7 @@
 const links = {
   github: "PabloVeronezi",
-  youtube: "channel/UCy68nqk1QxGhnGJZlXAC4Vw",
-  instagram: "",
   facebook: "pveronezi",
-  twitter: ""
+  linkedin: "in/pabloveronezi"
 };
 
 
@@ -11,7 +9,7 @@ function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class');
 
-    li.children[0].href = `https://${social}.com${links[social]}`;
+    li.children[0].href = `https://${social}.com/${links[social]}`;
 
   }
 }
