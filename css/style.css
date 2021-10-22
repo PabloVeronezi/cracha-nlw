@@ -19,7 +19,7 @@ body {
 main {
   background: url(../images/background.svg);
   width: 375px;
-  height: 90vh;
+  height: 100vh;
 }
 
 .container {
